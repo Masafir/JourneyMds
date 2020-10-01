@@ -13,12 +13,6 @@ function App() {
   console.log(open);
   return (
     <div className="App">
-      <header className="App-header">
-        <h1> Description MDS </h1>
-       <Box>
-         <p>pipip</p>
-       </Box>
-         <button onClick={() => setOpen(!open)}> Lock drawer </button>
         {/* <Navigation></Navigation> */}
        <Drawer 
         open={open}
@@ -32,13 +26,13 @@ function App() {
           <List> Filets solidaires </List>
           <List> Les marchés d'Angers </List>
        </Drawer>
-      </header>
         <Router>
           <Switch>
             <Route exact path="/" component={HomePage} />
             <Route exact path="/page" render={(props) => <Pages {...props} />} />
           </Switch> 
         </Router>
+        <button onClick={() => setOpen(!open)}> Lock drawer </button>
     </div>
   );
 }
