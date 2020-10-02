@@ -181,8 +181,11 @@ const HomePage = (props) => {
                 <Picture src={require('../images/gatsbar.png')} />
               </ImageContainer>
             <Description>
-              Lorem ipsum dolor, sit amet consectetur adipisicing elit. Vero veritatis nihil aspernatur fugiat architecto sunt laboriosam aperiam, illum expedita. Sit aut accusamus inventore modi illum labore necessitatibus maiores suscipit dolorum?Lorem ipsum dolor sit amet consectetur adipisicing elit. Error ipsa ipsam perferendis possimus, totam fuga harum sint reiciendis veritatis illo excepturi atque, dolore dolor dignissimos. Veniam dicta dolorum enim quaerat.
-              Ea dolores dignissimos sit alias est, 
+            Pour ceux qui aime les lieux atypiques, l’alcool et la série Peaky Blinders …
+            Enfiler vos plus belles tenues des années 20’…   On vous emmène avec nous au Gatsby Bar ! 
+            Ouvert par les frères Gareau, Le concept est encore tout nouveau sur la ville d’Angers, 
+            Le Gatsby Bar (anciennement Garry’s Bar) reprend en fait le principe des bars clandestins. Il se cache derrière une enseigne d’épicerie, et renferme en vérité un bar à cocktails à base de cointreau, menthe pastille et pleins d’autres produits angevins, tout ça dans une ambiance années 20. L’adresse est tenue secrète, et pour y accéder, il vous faudra disposer d’un code (qui change chaque mois.) 
+            Alors n’oubliez pas … restez discret 😉
             </Description>
           </InfoContainer>
           <Address color={theme.primary}> Le Gatsby Bar <a href="https://legatsbybar.com/"> Infos supplémentaires </a> </Address>
