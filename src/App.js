@@ -9,6 +9,7 @@ import List from '@material-ui/core/List';
 import Box from '@material-ui/core/Box';
 import styled from 'styled-components';
 import theme from './theme';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 const NavigationBar = styled.div`
   position: fixed;
   width: 100%;
@@ -25,6 +26,7 @@ const NavElement = styled.div`
 const Linker = styled.a`
   color: ${props => props.color ? props.color : theme.primary};
   text-decoration: none;
+  padding: 5px;
 `;
 
 function App() {
@@ -33,13 +35,14 @@ function App() {
   return (
     <div className="App">
         {/* <Navigation></Navigation> */}
+        
        <Drawer 
         open={open}
         variant="persistent"
         anchor="left"
         classes={{backgroundColor: 'red'}}
       >
-          <List style={{cursor: 'pointer'}} onClick={() => setOpen(!open)}> Return </List>
+          <List style={{cursor: 'pointer'}} onClick={() => setOpen(!open)}> X  </List>
           <List style={{cursor: 'pointer'}} onClick={() => setOpen(!open)}> <Linker href="#barachat"> Bar à Chat</Linker>  </List>
           <List style={{cursor: 'pointer'}} onClick={() => setOpen(!open)}> <Linker href="#petitpres">Les petits près</Linker> </List>
           <List style={{cursor: 'pointer'}} onClick={() => setOpen(!open)}> <Linker href="#freretoques">Les frères toques</Linker> </List>
@@ -48,16 +51,17 @@ function App() {
        </Drawer>
        <NavigationBar> 
           <NavElement onClick={() => setOpen(!open)}>
-           Nav 
+           + <FontAwesomeIcon icon="coffee" />
           </NavElement>
           <NavElement>
-           <Linker href="#head" color='white'> Home </Linker> 
+           <Linker href="#head" color='white'> Accueil </Linker> 
           </NavElement>  
-          <NavElement>
-           Nav 
+          <NavElement> 
+          <Linker href="#footer" color='white'> Contact </Linker>
           </NavElement>   
         </NavigationBar>
         <HomePage />
+        
     </div>
   );
 }
